@@ -1,7 +1,12 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import RouteList from './routes';
+
 export default function App() {
   return (
-    <h1>
-      Web app simulador de depósitos a plazo
-    </h1>
+    <Router>
+      <RouteList />
+    </Router>
   );
 }

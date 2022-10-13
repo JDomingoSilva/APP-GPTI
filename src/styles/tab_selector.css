@@ -1,0 +1,35 @@
+div#tab-selector {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.tab-selector-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.img-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img.tab-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+img.tab-image:hover {
+  transform: scale(1.08);
+}
+
+img.tab-image#selected {
+  transform: scale(1.08);
+}
