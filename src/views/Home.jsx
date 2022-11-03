@@ -1,11 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 
-import TabSelector from "../components/home/TabSelector"
-import SimulatorShile from "../components/home/SimulatorShile"
-import SimulatorConsorcio from "../components/home/SimulatorConsorcio"
+import Simulator from "../components/home/Simulator"
 
 export default function Home() {
-  const [selected, setSelected] = useState('');
 
   return (
     <div id="invisi-div">
@@ -14,22 +11,7 @@ export default function Home() {
           Simulador de depósitos a plazo
         </h1>
         <div id="interfaz-container" >
-          <TabSelector selected={selected} setSelected={setSelected} />
-
-          <div id="separador" />
-
-          {selected === "Shile" ? (
-            <SimulatorShile />
-          ) : (
-            selected === "Consorcio" ? (
-              <SimulatorConsorcio />
-            ) : (
-              <div className="empty-container">
-                <h3> Seleccione un banco para simular </h3>
-              </div>
-            )
-          )}
-
+          <Simulator />
         </div>
       </div>
     </div>

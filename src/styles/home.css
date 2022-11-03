@@ -19,10 +19,6 @@ div#background-container {
 }
 
 div#interfaz-container {
-  height: 50%;
-  width: 50%;
-  display: grid;
-  grid-template-rows: 6fr 1fr 26fr;
   background-color: white;
 }
 
